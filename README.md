@@ -1,6 +1,7 @@
 # Perpendere
 > ### Perpendere
 >Verb. /pɛrˈpɛn.dɛ.rɛ/
+> To assess values. Latin
 
 
 A Python project used to assign, search and store values!
