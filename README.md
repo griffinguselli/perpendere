@@ -47,7 +47,8 @@ New-Item -Path $PROFILE -Force
 ```bash
 Add-Content $PROFILE 'function perpendere { python ~/perpendere.py $args }'
 ```
-
+## Syncing Across Devices
+Syncing is simple. Using some basic computer knowledge, you can install a program like Syncthing on both devices. Share the 'dict.csv' file and make sure that the program and the .csv file are in the same folder. You must adjust the function commands (above) to work in the folder.
 ## Usage
 ### Assign
 ```bash
