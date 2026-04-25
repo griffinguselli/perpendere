@@ -51,24 +51,25 @@ Add-Content $PROFILE 'function perpendere { python ~/perpendere.py $args }'
 ## Usage
 ### Assign
 ```bash
-perpendere 1 key value
+perpendere key value
 ```
 or
 
 ```bash
-perpendere 1 "long key" "long value"
+perpendere "long key" "long value"
 ```
 This puts it into the dict.csv file that converts into a python dictionary.
 
 ### Search
 ```bash
- perpendere 0 key
+ perpendere key
 ```
 or
 ```bash
-perpendere 0 "long key"
+perpendere "long key"
 ```
 ### Resest File
 ```bash
 rm dict.csv
 ```
+-
