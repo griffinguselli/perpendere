@@ -68,3 +68,7 @@ or
 ```bash
 perpendere 0 "long key"
 ```
+### Resart File
+```bash
+rm dict.csv
+```
