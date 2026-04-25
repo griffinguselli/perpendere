@@ -1,5 +1,9 @@
 import sys
-dictfile = {}
+dictfile = {} 
+
+##############################
+# Transfer CSV to Dictionary #
+##############################
 
 def dictionary(val):
     with open("dict.csv") as file:
@@ -10,31 +14,39 @@ def dictionary(val):
         return dictfile[val]
     except KeyError:
         print(f"'{val}' is not in the dictionary.")    
+
+#############
+# Main Loop #
+#############
+
 while True:
     try:
-        index = int(sys.argv[1])
+        indexerror = sys.argv[2]
     except IndexError:
-        print("Please input an argument for Index.")
-        sys.exit ()
+        index = 0
     else:
-        if index == 0:
-            try:
-                value = sys.argv[2]
-                break
-            except IndexError:
-                print("Input an argument for 'Value'")
-                sys.exit()
-        elif index == 1:
-            try:
-                value = sys.argv[2]
-                meaning = sys.argv[3]
-                break
-            except IndexError:
-                print("Input an argument for 'Value' or argument 'Meaning'")
-                sys.exit()
+        index = 1 
+
+    if index == 0:
+        try:
+            value = sys.argv[1]
+            break
+        except IndexError:
+            print("Input an argument for 'Value'")
+            sys.exit()
+    elif index == 1:
+        try:
+            value = sys.argv[1]
+            meaning = sys.argv[2]
+            break
+        except IndexError:
+            print("Input an argument for 'Value' or argument 'Meaning'")
+            sys.exit()
         else:
             print("Index is not 0 or 1. 0 is 'search' and 1 is 'import'")
             sys.exit()
+
+
 if index == 0:
     while True:
         try:
