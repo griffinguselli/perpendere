@@ -42,12 +42,12 @@ echo 'perpendere() { python3 ~/perpendere.py "$@"; }' >> ~/.zshrc && source ~/.z
 ```
 #### Windows:
 ```bash
-Add-Content $PROFILE 'function perpendere { python ~/perepndere.py $args }'
-```
-( If profile doesn't exist yet, Paste:)
-```bash
 New-Item -Path $PROFILE -Force
 ```
+```bash
+Add-Content $PROFILE 'function perpendere { python ~/perpendere.py $args }'
+```
+
 ## Usage
 ### Assign
 ```bash
@@ -68,7 +68,7 @@ or
 ```bash
 perpendere 0 "long key"
 ```
-### Resart File
+### Resest File
 ```bash
 rm dict.csv
 ```
