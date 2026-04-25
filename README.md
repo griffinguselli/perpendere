@@ -30,19 +30,19 @@ winget install Python.Python.3
 Now that python3 is installed, install the python file. Make sure that perpendere.py is in your Home folder. Now create the function.
 #### Debian/Ubuntu Base:
 ```bash
-echo 'perpendere() { python3 ~/diction.py "$@"; }' >> ~/.bashrc && source ~/.bashrc
+echo 'perpendere() { python3 ~/perpendere.py "$@"; }' >> ~/.bashrc && source ~/.bashrc
 ```
 #### Arch Base:
 ```bash
-echo 'perpendere() { python3 ~/diction.py "$@"; }' >> ~/.zshrc && source ~/.zshrc
+echo 'perpendere() { python3 ~/perpendere.py "$@"; }' >> ~/.zshrc && source ~/.zshrc
 ```
 #### macOS:
 ```base
-echo 'perpendere() { python3 ~/diction.py "$@"; }' >> ~/.zshrc && source ~/.zshrc
+echo 'perpendere() { python3 ~/perpendere.py "$@"; }' >> ~/.zshrc && source ~/.zshrc
 ```
 #### Windows:
 ```bash
-Add-Content $PROFILE 'function perpendere { python ~/diction.py $args }'
+Add-Content $PROFILE 'function perpendere { python ~/perepndere.py $args }'
 ```
 ( If profile doesn't exist yet, Paste:)
 ```bash
