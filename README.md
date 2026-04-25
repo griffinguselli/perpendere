@@ -1,4 +1,5 @@
 # Perpendere
+#OldVersions
 > ### Perpendere
 >Verb. /pɛrˈpɛn.dɛ.rɛ/
 > To assess values. Latin
